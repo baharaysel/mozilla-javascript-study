@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+    
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+
+    <script>
+        const cats = ['Bill', 'Jeff', 'Pete', 'Biggles', 'Jasmin'];
+        let info = 'My cats are called ';
+        const para = document.querySelector('p');
+
+        for (let i = 0; i < cats.length-1; i++) {
+        info += cats[i] + ', ';
+        }
+        count = cats.length-1
+        lastItem = cats[count];
+
+        info = info + ' and ' + lastItem + '.';
+
+        para.textContent = info;
+    </script>
+    
+</body>
+</html>
